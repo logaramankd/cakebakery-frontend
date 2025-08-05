@@ -1,9 +1,17 @@
 import React from 'react'
+import Register from './pages/Auth/Register'
+import { BrowserRouter, Route, Router, Routes } from 'react-router-dom'
+import Login from './pages/Auth/Login'
 
 const App = () => {
   return (
     <div>
-      This is App
+        <Routes>
+          <Route path='/register' element={<Register />} />
+          <Route path='/login' element={<Login />} />
+        </Routes>
+      <Register />
+
     </div>
   )
 }
