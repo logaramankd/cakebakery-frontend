@@ -1,4 +1,4 @@
-export const ROUTE_PATH = {
-    register: 'register',
-    login: 'login'
-}
+// export const ROUTE_PATH = {
+//     register: 'register',
+//     login: 'login'
+// }

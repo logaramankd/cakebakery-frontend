@@ -1,19 +1,20 @@
 import React from 'react'
-import Register from './pages/Auth/Register'
 import { BrowserRouter, Route, Router, Routes } from 'react-router-dom'
-import Login from './pages/Auth/Login'
-
+import Login from './forms/Auth/Login'
+import Register from './forms/Auth/Register'
+import Home from './components/pages/Home'
+import '../src/app.css'
 const App = () => {
   return (
-    <div>
-        <Routes>
-          <Route path='/register' element={<Register />} />
-          <Route path='/login' element={<Login />} />
-        </Routes>
-      <Register />
-
+    <div style={{ width: '100%', minHeight: '100vh' }}>
+      <Routes>
+        <Route path='/register' element={<Register />} />
+        <Route path='/login' element={<Login />} />
+        <Route path='/' element={<Home />} />
+      </Routes>
     </div>
   )
 }
 
 export default App
+// Josefin Sans
